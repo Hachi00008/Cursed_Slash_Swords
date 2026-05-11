@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "hachi00008.cursed_slash_swords.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
