@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cursed_slash_swords:block/spiritual_iron_block"
+  }
+}
