@@ -7,16 +7,22 @@
 	"authors": [
 		"Hachi00008"
 	],
+	"contributors": [
+		"あれい(AZer0_)"
+	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "",
 	"icon": "assets/cursed_slash_swords/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"hachi00008.cursed_slash_swords.CursedSlashSwords"
+		],
+		"client": [
+			"hachi00008.cursed_slash_swords.CursedSlashSwordsClient"
 		],
 		"fabric-datagen": [
 			"hachi00008.cursed_slash_swords.CursedSlashSwordsDataGenerator"
