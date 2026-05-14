@@ -5,10 +5,14 @@ import hachi00008.cursed_slash_swords.command.SoulCommand;
 import hachi00008.cursed_slash_swords.creativemodetab.ModCreativeModeTabs;
 import hachi00008.cursed_slash_swords.item.ModItems;
 import hachi00008.cursed_slash_swords.network.SoulSyncPayLoad;
+import hachi00008.cursed_slash_swords.util.SoulDataAccessor;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.minecraft.server.level.ServerPlayer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,6 +28,13 @@ public class CursedSlashSwords implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		PayloadTypeRegistry.clientboundPlay().register(SoulSyncPayLoad.TYPE, SoulSyncPayLoad.CODEC);
+
+		ServerPlayConnectionEvents.JOIN.register((handler, sender, play) -> {
+			ServerPlayer player = handler.getPlayer();
+			SoulDataAccessor accessor = (SoulDataAccessor) player;
+
+			ServerPlayNetworking.send(player, new SoulSyncPayLoad(accessor.getSoulCount(), accessor.getMaxSoul()));
+		});
 
 		CommandRegistrationCallback.EVENT.register((dispatcher, buildContext, selection) -> {
 			SoulCommand.register(dispatcher, buildContext);
