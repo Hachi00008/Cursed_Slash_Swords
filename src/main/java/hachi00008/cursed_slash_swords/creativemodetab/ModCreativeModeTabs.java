@@ -17,10 +17,11 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.SPIRITUAL_IRON_INGOT))
                     .title(Component.translatable("itemGroup.cursed_slash_swords.cursed_ingredients"))
                     .displayItems((parameters, output) -> {
-                      output.accept(ModItems.SPIRITUAL_IRON_INGOT);
-                      output.accept(ModItems.FOX_CHERRY_BLOSSOM_STONE);
-                      output.accept(ModItems.EMPTY_SPIRIT_BOTTLE);
-                      output.accept(ModItems.SPIRIT_BOTTLE);
+                        output.accept(ModItems.SPIRITUAL_IRON_INGOT);
+                        output.accept(ModItems.FOX_CHERRY_BLOSSOM_STONE);
+                        output.accept(ModItems.FOX_CHERRY_BLOSSOM_IRON_INGOT);
+                        output.accept(ModItems.EMPTY_SPIRIT_BOTTLE);
+                        output.accept(ModItems.SPIRIT_BOTTLE);
 
                     }).build());
 

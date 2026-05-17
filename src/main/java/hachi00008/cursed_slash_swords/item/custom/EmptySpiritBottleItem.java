@@ -35,26 +35,27 @@ public class EmptySpiritBottleItem extends Item {
 
             level.playSound(null, player.getX(), player.getY(), player.getZ(),
                     SoundEvents.ELDER_GUARDIAN_HURT, SoundSource.PLAYERS, 1.0F, 0.5F);
-        }
 
-        ItemStack resultStack = new ItemStack(ModItems.SPIRIT_BOTTLE);
+            ItemStack resultStack = new ItemStack(ModItems.SPIRIT_BOTTLE);
 
-        if (!player.getAbilities().instabuild) {
-            if (heldStack.getCount() == 1) {
-                player.setItemInHand(hand, resultStack);
-                return InteractionResult.SUCCESS;
+            if (!player.getAbilities().instabuild) {
+                if (heldStack.getCount() == 1) {
+                    player.setItemInHand(hand, resultStack);
+                } else {
+                    heldStack.shrink(1);
+                    if (!player.getInventory().add(resultStack)) {
+                        player.drop(resultStack, false);
+                    }
+                }
             } else {
-                heldStack.shrink(1);
                 if (!player.getInventory().add(resultStack)) {
                     player.drop(resultStack, false);
                 }
             }
-        } else {
-            if (!player.getInventory().add(resultStack)) {
-                player.drop(resultStack, false);
-            }
+
+            return InteractionResult.SUCCESS;
         }
 
-        return InteractionResult.SUCCESS;
+        return InteractionResult.CONSUME;
     }
 }

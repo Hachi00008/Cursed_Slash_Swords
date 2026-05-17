@@ -24,5 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.EMPTY_SPIRIT_BOTTLE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.SPIRIT_BOTTLE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.FOX_CHERRY_BLOSSOM_STONE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.FOX_CHERRY_BLOSSOM_IRON_INGOT, ModelTemplates.FLAT_ITEM);
     }
 }

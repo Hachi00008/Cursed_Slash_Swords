@@ -15,9 +15,10 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item SPIRITUAL_IRON_INGOT = registerItem("spiritual_iron_ingot", Item::new);
+    public static final Item FOX_CHERRY_BLOSSOM_IRON_INGOT = registerItem("fox_cherry_blossom_iron_ingot", properties -> new Item(properties.rarity(Rarity.RARE)));
     public static final Item FOX_CHERRY_BLOSSOM_STONE = registerItem("fox_cherry_blossom_stone", properties -> new Item(properties.rarity(Rarity.RARE)));
     public static final Item EMPTY_SPIRIT_BOTTLE = registerItem("empty_spirit_bottle", properties -> new EmptySpiritBottleItem(properties.stacksTo(16)));
-    public static final Item SPIRIT_BOTTLE = registerItem("spirit_bottle", properties -> new SpiritBottleItem(properties.stacksTo(1)));
+    public static final Item SPIRIT_BOTTLE = registerItem("spirit_bottle", properties -> new SpiritBottleItem(properties.stacksTo(1).craftRemainder(ModItems.EMPTY_SPIRIT_BOTTLE)));
 
 
     public static Item registerItem(String name, Function<Item.Properties, Item> function) {
