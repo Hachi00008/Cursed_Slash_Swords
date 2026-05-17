@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "empty_spiritual_bottle",
+  "key": {
+    "G": "minecraft:glass",
+    "S": "minecraft:soul_sand"
+  },
+  "pattern": [
+    "GSG",
+    " G "
+  ],
+  "result": {
+    "count": 3,
+    "id": "cursed_slash_swords:empty_spirit_bottle"
+  }
+}

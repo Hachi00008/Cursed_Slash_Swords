@@ -21,7 +21,7 @@ public abstract class ServerPlayerEntityMixin extends Player implements SoulData
     @Unique
     private int souls_count = 0;
     @Unique
-    private int souls_max = 100;
+    private int souls_max = 1000;
 
     public ServerPlayerEntityMixin(Level level, GameProfile gameProfile) {
         super(level, gameProfile);
@@ -36,7 +36,7 @@ public abstract class ServerPlayerEntityMixin extends Player implements SoulData
     @Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
     private void injectReadCustomData(final ValueInput input, CallbackInfo ci) {
         this.souls_count = input.getIntOr("SoulCount", 0);
-        this.souls_max = input.getIntOr("MaxSoulsPressure", 100);
+        this.souls_max = input.getIntOr("MaxSoulsPressure", 1000);
     }
 
     @Inject(method = "onUpdateAbilities", at = @At("TAIL"))

@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "facing=north,half_side=left":  { "model": "cursed_slash_swords:block/soul_forge_right" },
+    "facing=north,half_side=right": { "model": "cursed_slash_swords:block/soul_forge_left" },
+
+    "facing=east,half_side=left":   { "model": "cursed_slash_swords:block/soul_forge_right", "y": 90 },
+    "facing=east,half_side=right":  { "model": "cursed_slash_swords:block/soul_forge_left", "y": 90 },
+
+    "facing=south,half_side=left":  { "model": "cursed_slash_swords:block/soul_forge_right", "y": 180 },
+    "facing=south,half_side=right": { "model": "cursed_slash_swords:block/soul_forge_left", "y": 180 },
+
+    "facing=west,half_side=left":   { "model": "cursed_slash_swords:block/soul_forge_right", "y": 270 },
+    "facing=west,half_side=right":  { "model": "cursed_slash_swords:block/soul_forge_left", "y": 270 }
+  }
+}

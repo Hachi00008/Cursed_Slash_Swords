@@ -18,6 +18,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGroup.cursed_slash_swords.cursed_ingredients"))
                     .displayItems((parameters, output) -> {
                       output.accept(ModItems.SPIRITUAL_IRON_INGOT);
+                      output.accept(ModItems.FOX_CHERRY_BLOSSOM_STONE);
                       output.accept(ModItems.EMPTY_SPIRIT_BOTTLE);
                       output.accept(ModItems.SPIRIT_BOTTLE);
 
@@ -29,6 +30,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGroup.cursed_slash_swords.cursed_blocks"))
                     .displayItems((parameters, output) -> {
                       output.accept(ModBlocks.SPIRITUAL_IRON_BLOCK);
+                      output.accept(ModBlocks.SOUL_FORGE);
 
                     }).build());
 

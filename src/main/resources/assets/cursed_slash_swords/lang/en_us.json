@@ -3,8 +3,10 @@
   "itemGroup.cursed_slash_swords.cursed_blocks": "Cursed Slash Swords Blocks",
 
   "item.cursed_slash_swords.spiritual_iron_ingot": "Spiritual Iron Ingot",
+  "item.cursed_slash_swords.fox_cherry_blossom_stone": "The enchanted ore \"Fox Cherry Blossom Stone\"",
   "item.cursed_slash_swords.empty_spirit_bottle": "Empty Spirit Bottle",
   "item.cursed_slash_swords.spirit_bottle": "Spirit Bottle",
 
-  "block.cursed_slash_swords.spiritual_iron_block": "Block of Spiritual Iron"
+  "block.cursed_slash_swords.spiritual_iron_block": "Block of Spiritual Iron",
+  "block.cursed_slash_swords.soul_forge": "Soul Forge"
 }

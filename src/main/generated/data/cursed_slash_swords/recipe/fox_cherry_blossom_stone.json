@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "fox_cherry_blossom_stone",
+  "ingredients": [
+    "cursed_slash_swords:spiritual_iron_ingot",
+    "cursed_slash_swords:spirit_bottle",
+    "minecraft:ender_pearl",
+    "minecraft:cherry_sapling"
+  ],
+  "result": {
+    "id": "cursed_slash_swords:fox_cherry_blossom_stone"
+  }
+}

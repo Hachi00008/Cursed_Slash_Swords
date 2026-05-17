@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "spiritual_iron_ingot",
+  "ingredients": [
+    "cursed_slash_swords:spiritual_iron_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "cursed_slash_swords:spiritual_iron_ingot"
+  }
+}

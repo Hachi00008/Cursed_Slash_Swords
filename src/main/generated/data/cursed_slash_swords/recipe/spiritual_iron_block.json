@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "spiritual_iron_block",
+  "key": {
+    "S": "cursed_slash_swords:spiritual_iron_ingot"
+  },
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "id": "cursed_slash_swords:spiritual_iron_block"
+  }
+}
